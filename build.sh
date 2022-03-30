@@ -39,7 +39,8 @@ SCRIPT_NAME=`basename "$0"`
 FAILURES=""
 SOURCE_FILE=`echo $@ | sed 's/\.go//'`
 CURRENT_DIRECTORY=${PWD##*/}
-OUTPUT=${SOURCE_FILE:-$CURRENT_DIRECTORY} # if no src file given, use current dir name
+#OUTPUT=${SOURCE_FILE:-$CURRENT_DIRECTORY} # if no src file given, use current dir name
+OUTPUT=reindexer
 
 for PLATFORM in $PLATFORMS; do
   GOOS=${PLATFORM%/*}
