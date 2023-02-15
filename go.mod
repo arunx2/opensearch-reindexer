@@ -1,10 +1,10 @@
 module reindexer
 
-go 1.19
+go 1.20
 
 require (
-	github.com/opensearch-project/opensearch-go v1.1.0
-	github.com/tidwall/gjson v1.14.3
+	github.com/opensearch-project/opensearch-go/v2 v2.2.0
+	github.com/tidwall/gjson v1.14.4
 )
 
 require (
